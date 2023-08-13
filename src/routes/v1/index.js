@@ -9,4 +9,7 @@ router.post(
     // AuthRequestValidators.validateUserAuth,
     UserController.create
 );
+router.post(
+    '/signin',UserController.signIn
+)
 module.exports=router;
